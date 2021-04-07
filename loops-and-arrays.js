@@ -6,6 +6,13 @@
 
 const names = ["Henk", "Piet", "Fred", "Joop"];
 
+    console.log(
+        names[0] + "je" +
+        names[1] + "je" +
+        names[2] + "je" +
+        names[3] + "je");
+
+
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(names) geeft: ["Henk", "Piet", "Fred", "Joop"]
@@ -20,6 +27,7 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // ==========================================
 
 const numbers = [2, 4, 5, 29, 38];
+console.log(numbers)
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -27,7 +35,9 @@ const numbers = [2, 4, 5, 29, 38];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [ 6, 12, 15, 87, 114 ];
 
-
+for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i] *3);
+}
 // ==========================================
 // Opdracht 3
 // Schrijf een script dat voor de maat van ieder vierkant in onderstaande array het volume uitrekent.
@@ -36,9 +46,14 @@ const numbers = [2, 4, 5, 29, 38];
 // ==========================================
 
 const squares = [30, 2, 8, 24, 11];
+console.log(squares)
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [30, 2, 8, 24, 11];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [27000, 8, 512, 13824, 1331];
+
+for (let i = 0; i < squares.length; i++) {
+    console.log(Math.pow(squares[i],3));
+}
